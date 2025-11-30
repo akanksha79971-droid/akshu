@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            width: 800px;
+            height: 900px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 6px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: bold;
+           
+        }
+        input,select,textarea{
+            width: 80%;
+        }
+        .gender-group{
+            display: flex;
+            gap: 2opx;
+            align-items: center;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .btn{
+            
+            color: white;
+            background: green;
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+           text-align: center;
+        }
+        .btn:hover{
+background: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer admission Form</h1>
+        <form>
+            <label>Full Name
+                <input type="text" placeholder="Enter your full name"><br><br>
+            </label>
+            <label>Father's Name
+                <input type="text" placeholder="Enter your father's name"><br><br>
+            </label>
+            <label>Mother's Name
+                <input type="text" placeholder="Enter your mother's name"><br><br>
+            </label>
+            <label>Date of Birth</label>
+            <input type="date"><br><br>
+            <label>E-mail</label>
+            <input type="email" placeholder="Enter your email"><br><br>
+            <label>Gender</label>
+            <div class="gender-group">
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other<br><br></div>
+            <label>Course name</label>
+            <select>
+                <option value="text">Select your Course</option>
+                <option value="text">CCC</option>
+                <option value="text">ADCA</option>
+                <option value="text">O'Level</option>
+                <option value="text">DCA</option>
+            </select><br><br>
+            <label>Address</label>
+            <textarea name="text" rows="3" placeholder="Enter your full address"></textarea><br><br>
+            <button class="btn">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
